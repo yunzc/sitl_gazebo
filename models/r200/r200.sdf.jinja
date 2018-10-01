@@ -68,15 +68,16 @@
         </camera>
 
         <plugin name="r200_controller" filename="libgazebo_ros_openni_kinect.so">
+          <robotNamespace></robotNamespace>
           <baseline>0.2</baseline>
           <alwaysOn>true</alwaysOn>
           <updateRate>1.0</updateRate>
-          <cameraName>r200_ir</cameraName>
-          <imageTopicName>/r200/depth/image_raw</imageTopicName>
-          <cameraInfoTopicName>/r200/depth/camera_info</cameraInfoTopicName>
-          <depthImageTopicName>/r200/depth/image_raw</depthImageTopicName>
-          <depthImageInfoTopicName>/r200/depth/camera_info</depthImageInfoTopicName>
-          <pointCloudTopicName>/r200/depth/points</pointCloudTopicName>
+          <cameraName>r200</cameraName>
+          <imageTopicName>depth/image_raw</imageTopicName>
+          <cameraInfoTopicName>depth/camera_info</cameraInfoTopicName>
+          <depthImageTopicName>depth/image_raw</depthImageTopicName>
+          <depthImageInfoTopicName>depth/camera_info</depthImageInfoTopicName>
+          <pointCloudTopicName>depth/points</pointCloudTopicName>
           <frameName>r200</frameName>
           <pointCloudCutoff>0.5</pointCloudCutoff>
           <distortionK1>0.00000001</distortionK1>
